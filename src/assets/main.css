@@ -1,0 +1,103 @@
+@import './base.css';
+
+
+.container{
+  display: flex;
+  width: calc(100vw - (2rem + 32px));
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.example{
+  display: flex;
+  position: relative;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+
+.info{
+  position: absolute;
+  width: 20vw;
+  max-height: 30vh;
+  background-color: rgba(22, 22, 50, 0.732);
+  color: white;
+  padding: 1rem;
+  border-radius: 15px;
+  margin-left: 2rem;
+  right: 0;
+  bottom: 0;
+  overflow-wrap: break-word;
+  animation: 1s forwards aparecer;
+}
+
+
+.text{
+  display: block;
+  width: 50%;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+
+.invisible{
+  display: none;
+}
+
+.button{
+  margin-top: 3rem;
+  margin-left: 2rem;
+  width: 30%;
+  height: 7vh;
+  border-radius: 15px;
+  background-color: rgb(61, 220, 133);
+  transition: 1s;
+}
+
+
+.input{
+  width: 50%;
+  height: 7vh;
+  border-radius: 15px;
+}
+
+
+.next{
+  width: 80px;
+  font-size: 2rem;
+}
+
+
+.link{
+  color: rgb(61, 220, 133);
+  text-decoration: underline;
+  transition: 1s;
+}
+
+
+@media (hover:hover){
+
+  .button:hover{
+      background-color: rgb(20, 127, 70);
+      color: white;
+      cursor: pointer;
+  }
+
+  .link:hover{
+    color: rgb(20, 127, 70);
+    cursor: pointer;
+  }
+}
+
+@keyframes aparecer {
+  0%{
+    opacity: 0;
+  }100%{
+    opacity: 1;
+  }
+}
