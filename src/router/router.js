@@ -4,7 +4,7 @@ import Barra from '../views/Busqueda.vue'
 import Link from '../views/Link.vue'
 import Home from '../views/Home.vue'
 const router = createRouter({
-    history: createWebHistory('/patrondiseno/'),
+    history: createWebHistory('/PatronDiseno/'),
     routes: [{
         path: '/',
         component: Home
